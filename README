@@ -1,0 +1,44 @@
+This project is for CS 430 Introduction to Algorithms - Fall 2016 at Illinois Institute of Technology, by Gruia Calinescu. Special thanks to Taeho Jung.
+
+
+http://cs.iit.edu/~cs430/project.pdf
+
+Athor: Lin Zhuo
+Date: 11/26/2012
+
+SEPARATING POINTS BY AXIS-PARALLEL LINES was addressed by a simple heuristic mlocal-optimization procedure: starting with an arbitrary feasible solution. Try all combinations of two lines from the current feasible solution, and another line. If the removal of the two lines followed by the addition of the other line
+results in another feasible solution, then proceed and change the current feasible solution. Repeat trying all combinations, until no combination leads to another feasible solution. 
+
+================================ COMPILE AND RUN ================================
+
+1) To enter the folder of project:
+cd CS430_project_Lin_Zhuo
+
+2) Add the input sources into the foler "input". Note that the format is strict.
+The input instances should be named "instance01" to "instance99", similarly. 
+
+Each input file starts with n, the number of points, followed by n lines, each containing two
+integers: the x and y coordinates of the point. The points are sorted by the x coordinates. For
+example:
+intance01:
+5
+1 1
+2 5
+3 3
+4 2
+5 4
+
+3) To compile the program, type in the command line:
+javac -d bin src/Project/*.java
+
+4) To run the program, type in the command line:
+java -cp bin Project.Util
+
+5) To look at the result, go to output_local folder. 
+
+The output file contains in the first line m, the number of axis-parallel lines used by the solution, followed by another m lines, each describing one axis-parallel line as follows: the characters ’h’ or ’v’ are used to describe if the axis-parallel line is horizontal or vertical, and a floating point gives the coordinate where this line crosses the axis. For example:
+local_solution01:
+3
+v 2.5
+v 3.5
+h 2.5
