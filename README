@@ -4,7 +4,7 @@ This project is for CS 430 Introduction to Algorithms - Fall 2016 at Illinois In
 http://cs.iit.edu/~cs430/project.pdf
 
 Athor: Lin Zhuo
-Date: 11/26/2012
+Date: 11/26/2016
 
 SEPARATING POINTS BY AXIS-PARALLEL LINES was addressed by a simple heuristic mlocal-optimization procedure: starting with an arbitrary feasible solution. Try all combinations of two lines from the current feasible solution, and another line. If the removal of the two lines followed by the addition of the other line
 results in another feasible solution, then proceed and change the current feasible solution. Repeat trying all combinations, until no combination leads to another feasible solution. 
